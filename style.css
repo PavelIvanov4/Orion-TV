@@ -1,0 +1,190 @@
+body {
+	margin : 0;
+	background : url('background.jpg');
+	background-size : cover;
+	background-repeat : space;
+}
+
+header {
+	width : max-content;
+	height : 42px;
+	background : orange;
+	padding : 12px;
+	font : 30px Righteous;
+	border-right; : 2px solid black;
+	border-bottom : 2px solid black;
+	border-radius : 0px 0px 30px 0px;
+	float : left;
+	cursor : default;
+}
+
+nav {
+	background : repeating-linear-gradient(to right, yellow 0px 40px, darkViolet 40px 80px);
+	height : 68px;
+	padding : 5px;
+	box-sizing : border-box;
+	cursor : default;
+}
+
+nav div {
+	color : white;
+	width : max-content;
+	margin-left : 33%;
+	margin-right : auto;
+	padding : 10px;
+	background : forestGreen;
+	border : 2px ridge gold;
+	font : 25px Nunito;
+	animation : new-ani 16s infinite ease;
+}
+
+#wrapper {
+	width : 50%;
+	height : max-content;
+	border : 3px solid black;
+	background : lightGreen;
+	margin-left : auto;
+	margin-right : auto;
+	margin-top : 90px;
+	box-shadow : 12px 12px rgba(14, 0, 55, 0.7);
+}
+
+#go {
+	display : block;
+	width : 100%;
+	min-height : 30px;
+	padding : 6px;
+	font : 34px Tahoma;
+	color : black;
+	background : bisque;
+	border-bottom : 2px solid black;
+	text-align : center;
+	text-decoration : none;
+	box-sizing : border-box;
+	cursor : pointer;
+	transition : 0.7s;
+}
+
+#randomize {
+	width : 50%;
+	display : inline-block;
+	padding : 6px;
+	border-right : 2px solid black;
+	font : 34px Tahoma;
+	background : bisque;
+	float : left;
+	text-align : center;
+	box-sizing : border-box;
+	cursor : default;
+}
+
+#show {
+	width : 50%;
+	display : inline-block;
+	padding : 6px;
+	font : 34px Tahoma;
+	background : bisque;
+	text-align : center;
+	box-sizing : border-box;
+	cursor : default;
+}
+
+#extra {
+	display : none;
+	padding : 16px;
+	width : 100%;
+	height : 160px;
+	font : 24px Verdana;
+	box-sizing : border-box;
+}
+
+.borders {
+	border-bottom : 2px solid black;
+}
+
+#go:hover {
+	background : orange;
+}
+
+@font-face {
+	src : url('righteous.ttf');
+	font-family : Righteous;
+}
+
+@font-face {
+	src : url('nunito.ttf');
+	font-family : Nunito;
+}
+
+@keyframes new-ani {
+	   0% {
+		border-color : gold;
+	} 20% {
+		border-color : violet;
+	} 40% {
+		border-color : skyBlue;
+	} 60% {
+		border-color : rgb(239, 34, 192);
+	} 80% {
+		border-color : lime;
+	} 100%{
+		border-color : gold;
+	}
+}
+
+@media screen and (max-width : 900px) {
+body {
+	background-size : 100% 700px;
+}	
+	
+nav div {
+	margin-left : 30%;
+}
+}
+
+@media screen and (max-width : 800px) {
+nav div {
+	margin-left : 24%;
+}
+}
+
+@media screen and (max-width : 700px) {
+nav div {
+	display : none;
+}
+}
+
+@media screen and (max-width : 600px) {
+body {
+	background : repeating-linear-gradient(to right, bisque 0px 60px, darkRed 60px 120px);
+	background-attachment : fixed;
+}	
+	
+nav {
+	visibility : hidden;
+}	
+	
+nav div {
+	display : none;
+}
+
+header {
+	border : none;
+	border-radius : 0 0 0 0;
+	width : 100%;
+	text-align : center;
+	font-size : 36px;
+	padding : 15px;
+}
+
+#wrapper {
+	width : 88%;
+	margin-top : 40px;
+}
+}
+
+@media screen and (max-width : 350px) {
+#wrapper, #go, #randomize, #show {
+	font-size : 30px;
+}	
+}
